@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gru.css">
+  <title>Расписание МЦИ-19</title>
+</head>
+<body>
+  <div class="wraper">
+    <div class="block one">
+
+      <div class="block_item">
+        <div class="block_title">
+          <ol class="ball">
+            <li><span>Понедельник</span></li>
+          </ol>
+        </div>
+        <div class="block_text">
+          <ol class="rounded">
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">МДК. 02.01</a></li>
+            <li><a href="#">Англ.язык</a></li>
+          </ol>
+          <div class="gif">
+            <img src="img/tom-and-jerry-what.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="block_item">
+        <div class="block_title">
+          <ol class="ball">
+            <li><span>Вторник</span></li>
+          </ol>
+        </div>
+        <div class="block_text">
+          <ol class="rounded">
+            <li><a href="#">МДК. 02.01</a></li>
+            <li><a href="#">МДК. 02.01</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">Англ.язык</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">физ-ра</a></li>
+          </ol>
+          <div class="gif">
+            <img class="gifImg" src="img/tired-af-insomnia.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block_item">
+        <div class="block_title">
+          <ol class="ball">
+            <li><span>Среда</span></li>
+          </ol>
+        </div>
+        <div class="block_text">
+          <ol class="rounded">
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">У/П 01</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">Англ.язык</a></li>
+            <li><a href="#">МДК. 02.01</a></li>
+            <li><a href="#">МДК. 02.01</a></li>
+          </ol>
+          <div class="gif">
+            <img src="img/ezgif-7-4a074471a904.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block_item">
+        <div class="block_title">
+          <ol class="ball">
+            <li><span>Четверг</span></li>
+          </ol>
+        </div>
+        <div class="block_text">
+          <ol class="rounded">
+            <li><a href="#">МДК.02.01</a></li>
+            <li><a href="#">МДК.02.01</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">У/П 02</a></li>
+            <li><a href="#">У/П 02</a></li>
+            <li><a href="#">У/П 02</a></li>
+            <li><a href="#">англ.язык</a></li>
+            <li><a href="#">БЖ</a></li>
+          </ol>
+          <div class="gif">
+            <img src="img/ezgif-7-364260878212.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block_item">
+        <div class="block_title">
+          <ol class="ball">
+            <li><span>Пятница</span></li>
+          </ol>
+        </div>
+        <div class="block_text">
+          <ol class="rounded">
+            <li><a href="#">МДК.02.01</a></li>
+            <li><a href="#">Рос. в мире</a></li>
+            <li><a href="#">Осн. элекрон</a></li>
+            <li><a href="#">БЖ</a></li>
+            <li><a href="#">МДК.01.01</a></li>
+            <li><a href="#">физ-ра</a></li>
+          </ol>
+          <div class="gif gif2">
+            <img class="class" src="img/ezgif-7-7a0dff373443.gif" alt="">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <a href="index.html" class="toMain">НА ГЛАВНУЮ СТРАНИЦУ</h1>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('.block_title').click(function(event) {
+        if ($('.block').hasClass('one')) {
+          $('.block_title').not($(this)).removeClass('active');
+          $('.block_text').not($(this).next()).slideUp(300);
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+      });
+    }); 
+</script>
+</body>
+</html>

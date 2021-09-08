@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.ball {
+list-style: none;
+margin: 0;
+}
+.ball span {
+width: 100%;
+color: #fff;
+text-decoration: none;
+display: inline-block;
+padding-left: 25px;
+height: 44px;
+line-height: 44px;
+font-size: 36px;
+position: relative;
+transition: .3s linear;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: #fff;
+}
+.ball span:before {
+content: "";
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #fff;
+position: absolute;
+left: -30px;
+top: 7px;
+}
+.ball li {position: relative;}
+.ball li:before {
+content: "";
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: #EC351D;
+position: absolute;
+top: 12px;
+left: -30px;
+z-index: 2;
+transition: .4s ease-in-out;
+}
+.ball li:hover:before {left: -20px;}
+
+.rounded {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0 0 0 10%;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+font-size: 19px;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+
+.block_title {
+  cursor: pointer;
+}
+
+.block_text {
+  display: none;
+}
+
+.block {
+  width: 20%;
+  padding: 4% 0 0 0;
+  margin: -3% 0 0 23%;
+}
+.block_item {
+  margin: 50px 0 0 0;
+}
+
+.toMain {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 0 -5%;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  position: relative;
+}
+
+
+/*.toMain{
+  color: #e74c3c;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+
+}*/
+
+.toMain:hover{
+  color: #88304E;
+  text-shadow: #fff 2px 2px 10px;
+}
+
+.toMain:before, .toMain:after{
+  content: '';
+  background: #e74c3c;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.toMain:before{
+  top: 0;
+  left: 0;
+}
+
+.toMain:after{
+  top: 100%;
+  right: 0;
+}
+
+.toMain:hover:before, a:hover:after{
+  width: 100%;
+}
+
+
+body {
+/*  width: 100vw;
+  height: 100vh;*/
+  background-image: url('https://cdn.pixabay.com/photo/2018/05/16/22/27/rose-3407234_960_720.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gif {
+    margin: -109% 0 0 105%;
+}
+
+img.gifImg {
+  width: 379px;
+}
+
+img.class {
+  width: 249px;
+}
+
+.gif2 {
+  margin: -81% 0 0 105%;
+}
